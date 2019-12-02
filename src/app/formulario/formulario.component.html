@@ -1,0 +1,8 @@
+<div class="container">
+    <form [formGroup]="form" novalidate (ngSubmit)=confirmar()>
+        <input type="text" class="form-control" placeholder="Endereço" autocomplete="off" formControlName="endereco">
+        <input type="number" class="form-control" placeholder="Número" autocomplete="off" formControlName="numero">
+        <input type="text" class="form-control" placeholder="Complemento" autocomplete="off" formControlName="complemento">
+        <button type="submit" class="btn btn-primary btn-lg">Confirmar</button>
+    </form>
+</div>
